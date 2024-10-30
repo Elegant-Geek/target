@@ -370,7 +370,7 @@ like there was a small gap between the image and bottom of the image div contain
   justify-content: left;
   align-items: center;
   /* flex-wrap: wrap; */
-  gap: 50px;
+  gap: 35px;
   padding: 2px;
 }
 .comic-menu-container > .rows h1 {
