@@ -78,7 +78,8 @@ button > a {
 .title-tank {
   display: flex;
   align-items: center;
-  gap: 8px;
+  /* sets gap between the targets in the logo in header */
+  gap: 25px;
 }
 .header ul {
   list-style-type: none;
