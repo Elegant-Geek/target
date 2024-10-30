@@ -216,14 +216,20 @@ so i had to basically set the shavo block height, then match the image height to
   border-radius: 15px;
 }
 /* updated so that all H1's get these details not just the .left-hero h1 */
-h1 {
+h1, h2 {
   font-family: treefrog;
-  font-size: 50px;
   color: white;
   font-weight: 900;
   margin: 0px;
   /* centers the main third eye title on the homepage when collapsed*/
   text-align: center;
+}
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
 }
 .second-header h1 {
   margin: 35px;
