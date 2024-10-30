@@ -17,8 +17,8 @@ a label {
   cursor: pointer;
   text-decoration: none;
   /* this is the one place where the color red is stored in the code: #d70f0f is the color i chose from the https://cssgradient.io/ tool! */
-  /* color: #d70f0f; */
-  color: rgba(6,68,231,1);
+  color: #d70f0f;
+  /* color: rgba(6,68,231,1); */
 }
 a:hover {
   color: white;
