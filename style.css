@@ -613,6 +613,9 @@ it just brings the paragraphs along with the first item to wrap so it looks clea
     .left-hero {
       padding: 0px 0px 80px 0px;
     }
+    .left-hero p {
+      margin-left: 0px;
+    }
 }
 /* narrower query (when you reach an 800 pixel width do...) */
 @media (max-width: 800px) {
