@@ -72,7 +72,7 @@ button > a {
   display: flex;
   /* space around for header rather than space between looks cleaner with a minimized window because it keeps everything still centered! */
   justify-content: space-around;
-  gap: 25px;
+  gap: 50px;
   /* allow elements to wrap when window is collapsed */
   flex-wrap: wrap;
   font-size: 30px;
