@@ -130,7 +130,7 @@ button > a {
   /* background: rgb(145,10,10);
   background: linear-gradient(0deg, rgba(145,10,10,1) 0%, rgba(75,5,5,1) 15%, rgba(0,0,0,1) 100%); */
   background: rgb(0,35,126);
-  background: linear-gradient(0deg, rgba(0,35,126,1) 0%, rgba(0,46,93,1) 21%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(0deg, rgba(0,35,126,1) 0%, rgba(0,36,89,1) 21%, rgba(0,0,0,1) 100%);
   /* SOURCE: https://cssgradient.io/ */
   /* old 0 color was #840f0f */
 }
@@ -360,7 +360,7 @@ like there was a small gap between the image and bottom of the image div contain
   /* background: rgb(145,10,10);
   background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(75,5,5,1) 50%, rgba(145,10,10,1) 100%); */
   background: rgb(0,35,126);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,46,93,1) 70%, rgba(0,35,126,1) 100%);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,36,89,1) 70%, rgba(0,35,126,1) 100%);
 }
 .social-media-container {
   display: flex;
@@ -469,7 +469,7 @@ like there was a small gap between the image and bottom of the image div contain
   /* background: rgb(145,10,10);
   background: linear-gradient(0deg, rgba(145,10,10,1) 0%, rgba(75,5,5,1) 15%, rgba(0,0,0,1) 100%); */
   background: rgb(0,35,126);
-  background: linear-gradient(0deg, rgba(0,35,126,1) 0%, rgba(0,46,93,1) 15%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(0deg, rgba(0,35,126,1) 0%, rgba(0,36,89,1) 15%, rgba(0,0,0,1) 100%);
 }
 .lore-container-1 > .lore-box {
   flex-direction: column;
@@ -525,7 +525,7 @@ like there was a small gap between the image and bottom of the image div contain
   /* background: rgb(145,10,10);
   background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(75,5,5,1) 50%, rgba(145,10,10,1) 100%); */
   background: rgb(0,35,126);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,46,93,1) 50%, rgba(0,35,126,1) 100%);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,36,89,1) 50%, rgba(0,35,126,1) 100%);
 }
 /* ***************************************** LORE PAGE ***************************************** */
 .lore-fanart {
