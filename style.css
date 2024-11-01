@@ -374,8 +374,8 @@ like there was a small gap between the image and bottom of the image div contain
 }
   /* you must specifiy the first container rules within the context of the comic menu class otherwise it messes up all your other pages */
 .comic-menu-options > .first-container{
-  /* allows the three menus options to extend the height of the page if needed when window is scrunched */
-  height: 22vw;
+    /* allows the three menus options to extend the height of the page if needed when window is scrunched */
+    height: 100%;
   /* raising the menu options */
   padding-bottom: 30px;
   padding-top: 50px;
