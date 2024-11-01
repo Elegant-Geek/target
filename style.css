@@ -498,7 +498,7 @@ like there was a small gap between the image and bottom of the image div contain
   padding: 0px 7vw 20px 7vw;
 }
 .lore-box, .trivia-mind-image-box {
-  gap: 50px;
+  gap: 25px;
 }
 .trivia-mind-image-box {
   flex-wrap: wrap;
@@ -553,12 +553,13 @@ like there was a small gap between the image and bottom of the image div contain
 .wide-lore-page-images{
   display: flex;
   /* set width of the tattoo boys lineup image and mind image at the bottom of it */
-  width: 66vw;
+  /* width: 66vw; */
   align-items: center;
   justify-content: center;
 }
 .wide-lore-page-images img {
-  width: inherit;
+  /* the images will be slightly smaller than the width of the lore text stuff*/
+  width: 70%;
 }
 #fanart-header h1 {
   padding-bottom: 26px;
