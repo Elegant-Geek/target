@@ -190,7 +190,7 @@ because you want the div height identical to the shavo image height. if you were
 then when doing flex wrap, the about section would overflow into the meet the band members section 
 so i had to basically set the shavo block height, then match the image height to whatever the height was set to for the shavo block */
 .shavo-block {
-  height: 700px;
+  height: 640px;
 }
 .shavo-block img {
   height: inherit;
