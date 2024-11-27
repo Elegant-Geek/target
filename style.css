@@ -538,7 +538,8 @@ like there was a small gap between the image and bottom of the image div contain
   /* subject to change height here */
   /* height: 800px; */
   /* makes whole background of fanart tank white not black */
-  padding-top: 8px;
+  /* REMOVED PADDING TOP FROM FANART CONTAINER 11.26.24 */
+  /* padding-top: 8px; */
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
