@@ -560,7 +560,7 @@ like there was a small gap between the image and bottom of the image div contain
 }
 .wide-lore-page-images img {
   /* the images will be slightly smaller than the width of the lore text stuff*/
-  width: 70%;
+  width: 50%;
 }
 #fanart-header h1 {
   padding-bottom: 26px;
