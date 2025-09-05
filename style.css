@@ -4,7 +4,8 @@
   font-family: treefrog;
   src: url(fonts/treefrog.ttf);
 }
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: black;
@@ -23,7 +24,8 @@ a label {
 a:hover {
   color: white;
 }
-p, ul > li {
+p,
+ul > li {
   color: white;
   line-height: 1.5;
   /* the margin below creates an indent for the bullet point spacing */
@@ -36,7 +38,7 @@ p {
   margin-left: 24px;
 }
 
-ul{
+ul {
   padding: 0px;
 }
 /* ALL DIVS GIVEN BORDER-BOX to avoid redundancy in code and to make formatting consistent when adding padding! */
@@ -50,7 +52,9 @@ button > a {
   font-family: sans-serif;
   text-align: center;
 }
-.first-container, .second-container, .fourth-container {
+.first-container,
+.second-container,
+.fourth-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,12 +65,12 @@ button > a {
   display: flex;
   flex-direction: row;
   padding: 80px 80px 45px 80px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
 }
 .header {
-    /* HERE IS WHERE YOU ADJUST HEADER PADDING SEPARATELY FROM THE MAIN FIRST CONTAINER 
+  /* HERE IS WHERE YOU ADJUST HEADER PADDING SEPARATELY FROM THE MAIN FIRST CONTAINER 
     (i removed header div and placed it above/outside the first container div) */
   padding: 0rem 5rem;
   display: flex;
@@ -116,7 +120,7 @@ button > a {
 }
 .right-hero img {
   width: 450px;
-  border-radius: 15px; 
+  border-radius: 15px;
 }
 .header a {
   text-decoration: none;
@@ -130,8 +134,13 @@ button > a {
   /* background-color: #063441; */
   /* background: rgb(145,10,10);
   background: linear-gradient(0deg, rgba(145,10,10,1) 0%, rgba(75,5,5,1) 15%, rgba(0,0,0,1) 100%); */
-  background: rgb(0,35,126);
-  background: linear-gradient(0deg, rgba(0,35,126,1) 0%, rgba(0,36,89,1) 21%, rgba(0,0,0,1) 100%);
+  background: rgb(0, 35, 126);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 35, 126, 1) 0%,
+    rgba(0, 36, 89, 1) 21%,
+    rgba(0, 0, 0, 1) 100%
+  );
   /* SOURCE: https://cssgradient.io/ */
   /* old 0 color was #840f0f */
 }
@@ -140,7 +149,7 @@ button > a {
   justify-content: center;
 }
 .second-container {
-  background-color: rgba(0,35,126,1);
+  background-color: rgba(0, 35, 126, 1);
   padding: 20px 0px 50px 0px;
 }
 
@@ -148,7 +157,7 @@ button > a {
   display: flex;
   align-items: center;
   /* space around rather than center allows shavo to adapt when screen is minimized */
-  justify-content:center;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 5px;
@@ -172,14 +181,15 @@ button > a {
   padding: 10px;
   margin: 0px;
 }
-.about-section p, .trivia-paragraph p {
+.about-section p,
+.trivia-paragraph p {
   text-indent: 50px;
   text-align: justify;
   /* idk if i will add the trivia div with this formatting but it is unlikely if it is decidedly in bullet point form */
 }
 
-
-.trivia-paragraph, .lore-paragraph {
+.trivia-paragraph,
+.lore-paragraph {
   width: 80%;
 }
 .about-section h1 {
@@ -224,7 +234,8 @@ so i had to basically set the shavo block height, then match the image height to
   border-radius: 15px;
 }
 /* updated so that all H1's get these details not just the .left-hero h1 */
-h1, h2 {
+h1,
+h2 {
   font-family: treefrog;
   color: white;
   font-weight: 900;
@@ -259,7 +270,8 @@ h2 {
   font-size: 36px;
   color: white;
 }
-.left-hero button, .grey-notice button {
+.left-hero button,
+.grey-notice button {
   border: none;
   border-radius: 6px;
   padding: 7px 15px;
@@ -271,20 +283,22 @@ h2 {
 .left-hero button {
   width: 180px;
   /* background-color: rgba(0,35,126,1); */
-  background-color: rgba(5,58,196,1);
+  background-color: rgba(5, 58, 196, 1);
 }
 .grey-notice button {
   width: 120px;
   background-color: rgb(37 37 37);
 }
-.left-hero button a, .grey-notice button a {
+.left-hero button a,
+.grey-notice button a {
   color: white;
 }
 /* CHANGING LINK A COLOR WITH BUTTON BG ON HOVER */
 .left-hero button:hover {
   background-color: white;
 }
-.left-hero button:hover a, .grey-notice button:hover a {
+.left-hero button:hover a,
+.grey-notice button:hover a {
   color: black;
 }
 /* SOURCE: https://stackoverflow.com/questions/71356198/how-to-change-the-background-of-a-button-with-a-link-on-hover */
@@ -334,14 +348,17 @@ like there was a small gap between the image and bottom of the image div contain
   color: white;
   margin: 10px 0px 0px 0px;
 }
-.grey-notice p, .footer p, .footer a {
+.grey-notice p,
+.footer p,
+.footer a {
   color: white;
   font-size: 16px;
   margin: 0px;
 }
 /* ADDED BACK TO TOP LINK FOR INDEX + FANART PAGE */
-  /* NOTE THAT THE MARGIN IS SET TO -50PX USING STYLE IN HTML FILE */
-#back-to-top-index, #back-to-top-fanart {
+/* NOTE THAT THE MARGIN IS SET TO -50PX USING STYLE IN HTML FILE */
+#back-to-top-index,
+#back-to-top-fanart {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -350,7 +367,8 @@ like there was a small gap between the image and bottom of the image div contain
   margin-top: -50px;
   height: 50px;
 }
-#back-to-top-index h3, #back-to-top-fanart h3 {
+#back-to-top-index h3,
+#back-to-top-fanart h3 {
   padding: 0px;
 }
 .footer {
@@ -360,8 +378,13 @@ like there was a small gap between the image and bottom of the image div contain
   padding: 40px 0px;
   /* background: rgb(145,10,10);
   background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(75,5,5,1) 50%, rgba(145,10,10,1) 100%); */
-  background: rgb(0,35,126);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,36,89,1) 70%, rgba(0,35,126,1) 100%);
+  background: rgb(0, 35, 126);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 36, 89, 1) 70%,
+    rgba(0, 35, 126, 1) 100%
+  );
 }
 .social-media-container {
   display: flex;
@@ -370,12 +393,12 @@ like there was a small gap between the image and bottom of the image div contain
 
 /* ***************************************** COMIC MENU ***************************************** */
 .comic-menu-options h1 {
-  line-height: 2.0;
+  line-height: 2;
 }
-  /* you must specifiy the first container rules within the context of the comic menu class otherwise it messes up all your other pages */
-.comic-menu-options > .first-container{
-    /* allows the three menus options to extend the height of the page if needed when window is scrunched */
-    height: 100%;
+/* you must specifiy the first container rules within the context of the comic menu class otherwise it messes up all your other pages */
+.comic-menu-options > .first-container {
+  /* allows the three menus options to extend the height of the page if needed when window is scrunched */
+  height: 100%;
   /* raising the menu options */
   padding-bottom: 30px;
   padding-top: 50px;
@@ -403,7 +426,8 @@ like there was a small gap between the image and bottom of the image div contain
   width: 75px;
   border-radius: 10px;
 }
-.sub-menu, .trivia-box {
+.sub-menu,
+.trivia-box {
   flex-direction: column;
 }
 
@@ -412,7 +436,8 @@ like there was a small gap between the image and bottom of the image div contain
   /* padding-bottom: 10px; */
   color: white;
 }
-.annoyed, .sub-menu {
+.annoyed,
+.sub-menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -441,7 +466,8 @@ like there was a small gap between the image and bottom of the image div contain
 /* here, i have set the max width of the submenu div called 'annoyed' and its comic pages below to a fixed width relative to the vw */
 
 /* note that TWO classes are listed here. the submenu header width and the comic page width */
-.annoyed, .comic-box-container img {
+.annoyed,
+.comic-box-container img {
   width: 56vw;
 }
 /* ***************************************** LORE PAGE ***************************************** */
@@ -457,11 +483,29 @@ like there was a small gap between the image and bottom of the image div contain
   border-radius: 5px;
 }
 /* setting flex properties for most divs */
-.lore-header, .lore-box, .fanart-container, .biggest-lore-box, .materials-paragraph, .trivia-box, .lore-trivia, .lore.fanart, .fanart-container, .lore-container-1, .lore-container-2, .lore-trivia, .trivia-mind-image-box {
+.lore-header,
+.lore-box,
+.fanart-container,
+.biggest-lore-box,
+.materials-paragraph,
+.trivia-box,
+.lore-trivia,
+.lore.fanart,
+.fanart-container,
+.lore-container-1,
+.lore-container-2,
+.lore-trivia,
+.trivia-mind-image-box {
   display: flex;
   align-items: center;
 }
-.lore-container-1, .lore-container-2, .lore-trivia,.lore-fanart, .biggest-lore-box, .materials-paragraph, .lore-paragraph  {
+.lore-container-1,
+.lore-container-2,
+.lore-trivia,
+.lore-fanart,
+.biggest-lore-box,
+.materials-paragraph,
+.lore-paragraph {
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -469,20 +513,27 @@ like there was a small gap between the image and bottom of the image div contain
 .lore-container-1 {
   /* background: rgb(145,10,10);
   background: linear-gradient(0deg, rgba(145,10,10,1) 0%, rgba(75,5,5,1) 15%, rgba(0,0,0,1) 100%); */
-  background: rgb(0,35,126);
-  background: linear-gradient(0deg, rgba(0,35,126,1) 0%, rgba(0,36,89,1) 15%, rgba(0,0,0,1) 100%);
+  background: rgb(0, 35, 126);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 35, 126, 1) 0%,
+    rgba(0, 36, 89, 1) 15%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 .lore-container-1 > .lore-box {
   flex-direction: column;
   gap: 20px;
 }
-.lore-container-1, .lore-container-2, .lore-trivia {
+.lore-container-1,
+.lore-container-2,
+.lore-trivia {
   /* give these three extra top/upper padding */
   padding-top: 35px;
   /* PREVENTS BLACK ON EITHER SIDE OF DIV WHEN SMALL ZOOM OUT */
   width: 100%;
 }
-.lore-header h1  {
+.lore-header h1 {
   padding-bottom: 33px;
 }
 .lore-header {
@@ -493,11 +544,13 @@ like there was a small gap between the image and bottom of the image div contain
 .lore-box img {
   width: 250px;
 }
-.lore-box, .trivia-box {
+.lore-box,
+.trivia-box {
   justify-content: space-around;
   padding: 0px 7vw 20px 7vw;
 }
-.lore-box, .trivia-mind-image-box {
+.lore-box,
+.trivia-mind-image-box {
   gap: 25px;
 }
 .trivia-mind-image-box {
@@ -509,24 +562,29 @@ like there was a small gap between the image and bottom of the image div contain
   gap: 10px;
 }
 .lore-container-2 {
-  border-top: 1px solid white; 
-  border-bottom: 1px solid white; 
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
 /* .materials-paragraph p, .lore-paragraph p, .trivia-paragraph p {
   setting width below will mess up stuff
   width: 350px;
 } */
- /* .lore-paragraph > p, ul > li {
+/* .lore-paragraph > p, ul > li {
   text-align: justify;
  } */
-  .lore-paragraph {
-    margin-top: -35px;
-  }
+.lore-paragraph {
+  margin-top: -35px;
+}
 .lore-trivia {
   /* background: rgb(145,10,10);
   background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(75,5,5,1) 50%, rgba(145,10,10,1) 100%); */
-  background: rgb(0,35,126);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,36,89,1) 50%, rgba(0,35,126,1) 100%);
+  background: rgb(0, 35, 126);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 36, 89, 1) 50%,
+    rgba(0, 35, 126, 1) 100%
+  );
 }
 /* ***************************************** LORE PAGE ***************************************** */
 .lore-fanart {
@@ -551,7 +609,7 @@ like there was a small gap between the image and bottom of the image div contain
   flex: none;
   padding: 15px;
 }
-.wide-lore-page-images{
+.wide-lore-page-images {
   display: flex;
   /* set width of the tattoo boys lineup image and mind image at the bottom of it */
   /* width: 66vw; */
@@ -572,7 +630,7 @@ like there was a small gap between the image and bottom of the image div contain
 @media (max-width: 1128px) {
   .both-heroes {
     padding: 20px 0px 45px 0px;
-  } 
+  }
 }
 /* narrower query (when you reach a 1062 pixel width aka when the serj pic on the homepage wraps over, do...) */
 @media (max-width: 1062px) {
@@ -589,12 +647,14 @@ like there was a small gap between the image and bottom of the image div contain
   #shavo-icon {
     padding: 0px 50px;
   }
-  .lore-box, .trivia-box {
+  .lore-box,
+  .trivia-box {
     flex-wrap: wrap;
     /* make gap smaller once all items have been flex wrapped */
     gap: 5px;
   }
-  .trivia-box img, .lore-box {
+  .trivia-box img,
+  .lore-box {
     /* NOTE: lore header top padding is currently this 33px too so adjust this variable if you change the lore header top padding */
     /* disgregard this because there is more space under a header than above by default nature of the font ugh there will be a slight few pixel difference to keep it looking vertically centered*/
     margin-top: 35px;
@@ -606,19 +666,19 @@ like there was a small gap between the image and bottom of the image div contain
     screeen widths. once these other settings kick in like the image divs 
     getting some margin-top spacing, the header padding bottom is redundant 
     and creates more space between the header and the image than needed. */
-  padding-bottom: 0px;
-}
-/* his code below applies some padding at this break point to prevent annoying single image being flex-wrapped at a time. 
+    padding-bottom: 0px;
+  }
+  /* his code below applies some padding at this break point to prevent annoying single image being flex-wrapped at a time. 
 it just brings the paragraphs along with the first item to wrap so it looks cleaner. */
   .materials-paragraph p {
     padding: 3vw 15vw;
   }
 }
 @media (max-width: 902px) {
-    /* minor padding adjustment (the padding right 40px got taken away) */
-    .left-hero {
-      padding: 0px 0px 80px 0px;
-    }
+  /* minor padding adjustment (the padding right 40px got taken away) */
+  .left-hero {
+    padding: 0px 0px 80px 0px;
+  }
 }
 /* narrower query (when you reach an 800 pixel width do...) */
 @media (max-width: 800px) {
@@ -628,9 +688,10 @@ it just brings the paragraphs along with the first item to wrap so it looks clea
   .comic-menu-container > .rows {
     gap: 5vw;
   }
-/* all comic pages take up more space on the screen now for mobile pages */
-/* DONT FORGET THE COMMA BETWEEN CLASSES (that's why it wasn't working) */
-  .annoyed, .comic-box-container img {
+  /* all comic pages take up more space on the screen now for mobile pages */
+  /* DONT FORGET THE COMMA BETWEEN CLASSES (that's why it wasn't working) */
+  .annoyed,
+  .comic-box-container img {
     width: 95vw;
   }
   .rows h1 {
@@ -662,7 +723,7 @@ it just brings the paragraphs along with the first item to wrap so it looks clea
     font-size: 30px;
   }
   .all-tanks {
-   /* closes the gap between all the character descriptions for mobile */
+    /* closes the gap between all the character descriptions for mobile */
     gap: 10px;
   }
   .footer {
@@ -679,7 +740,7 @@ it just brings the paragraphs along with the first item to wrap so it looks clea
     flex-wrap: wrap;
     justify-content: center;
   }
-/* for super skinny dimensions, allow social media icons to form into a square not a straight line */
+  /* for super skinny dimensions, allow social media icons to form into a square not a straight line */
   .social-media-container {
     flex-wrap: wrap;
     align-items: center;
