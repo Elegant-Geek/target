@@ -487,7 +487,6 @@ like there was a small gap between the image and bottom of the image div contain
 .lore-box,
 .fanart-container,
 .biggest-lore-box,
-.materials-paragraph,
 .trivia-box,
 .lore-trivia,
 .lore.fanart,
@@ -509,7 +508,12 @@ like there was a small gap between the image and bottom of the image div contain
   justify-content: center;
   flex-wrap: wrap;
 }
-
+.materials-paragraph {
+  padding: 0px 10px;
+}
+.materials-paragraph li {
+  color: white;
+}
 .lore-container-1 {
   /* background: rgb(145,10,10);
   background: linear-gradient(0deg, rgba(145,10,10,1) 0%, rgba(75,5,5,1) 15%, rgba(0,0,0,1) 100%); */
@@ -534,7 +538,7 @@ like there was a small gap between the image and bottom of the image div contain
   width: 100%;
 }
 .lore-header h1 {
-  padding-bottom: 33px;
+  padding-bottom: 24px;
 }
 .lore-header {
   /* exclude the extra padding: for the first header "lore"; */
@@ -547,7 +551,7 @@ like there was a small gap between the image and bottom of the image div contain
 .lore-box,
 .trivia-box {
   justify-content: space-around;
-  padding: 0px 7vw 20px 7vw;
+  padding: 0px 1vw 20px 1vw;
 }
 .lore-box,
 .trivia-mind-image-box {
@@ -556,7 +560,7 @@ like there was a small gap between the image and bottom of the image div contain
 .trivia-mind-image-box {
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 66vw;
+  width: 95vw;
 }
 .trivia-box {
   gap: 10px;
@@ -618,7 +622,9 @@ like there was a small gap between the image and bottom of the image div contain
 }
 .wide-lore-page-images img {
   /* the images will be slightly smaller than the width of the lore text stuff*/
-  width: 50%;
+  max-width: 400px; /* This is your cap */
+  width: 100%; /* This forces it to shrink with the viewport */
+  height: auto;
 }
 #fanart-header h1 {
   padding-bottom: 26px;
@@ -634,6 +640,9 @@ like there was a small gap between the image and bottom of the image div contain
 }
 /* narrower query (when you reach a 1062 pixel width aka when the serj pic on the homepage wraps over, do...) */
 @media (max-width: 1062px) {
+  .lore-container-2 img {
+    display: none;
+  }
   /* reformats grey notice on homepage */
   .grey-notice {
     flex-wrap: wrap;
@@ -647,18 +656,20 @@ like there was a small gap between the image and bottom of the image div contain
   #shavo-icon {
     padding: 0px 50px;
   }
-  .lore-box,
   .trivia-box {
-    flex-wrap: wrap;
     /* make gap smaller once all items have been flex wrapped */
     gap: 5px;
+  }
+  .trivia-box {
+    flex-wrap: wrap;
   }
   .trivia-box img,
   .lore-box {
     /* NOTE: lore header top padding is currently this 33px too so adjust this variable if you change the lore header top padding */
     /* disgregard this because there is more space under a header than above by default nature of the font ugh there will be a slight few pixel difference to keep it looking vertically centered*/
-    margin-top: 35px;
+    margin-top: 20px;
   }
+
   .lore-header h1 {
     /* CODE EXPLANATION HERE:
     At the top of the collapsing lore page: the first header is affected. 
@@ -670,9 +681,9 @@ like there was a small gap between the image and bottom of the image div contain
   }
   /* his code below applies some padding at this break point to prevent annoying single image being flex-wrapped at a time. 
 it just brings the paragraphs along with the first item to wrap so it looks cleaner. */
-  .materials-paragraph p {
+  /* .materials-paragraph p {
     padding: 3vw 15vw;
-  }
+  } */
 }
 @media (max-width: 902px) {
   /* minor padding adjustment (the padding right 40px got taken away) */
@@ -680,8 +691,23 @@ it just brings the paragraphs along with the first item to wrap so it looks clea
     padding: 0px 0px 80px 0px;
   }
 }
+@media (max-width: 825px) {
+  .header ul {
+    gap: 32px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
 /* narrower query (when you reach an 800 pixel width do...) */
 @media (max-width: 800px) {
+  .lore-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .lore-container-2 {
+    flex-direction: column;
+  }
   .comic-menu-container > .rows h1 {
     font-size: 5vw;
   }
@@ -698,6 +724,13 @@ it just brings the paragraphs along with the first item to wrap so it looks clea
     flex-wrap: wrap;
     font-size: 6vw;
   }
+  .lore-box,
+  .trivia-mind-image-box {
+    gap: 8px;
+  }
+  .lore-box img {
+    width: 100px;
+  }
 }
 @media (max-width: 642px) {
   .button-box {
@@ -706,6 +739,10 @@ it just brings the paragraphs along with the first item to wrap so it looks clea
 }
 /* narrower query (when you reach a 600 pixel width do...) */
 @media (max-width: 600px) {
+  .trivia-paragraph,
+  .lore-paragraph {
+    width: 95%;
+  }
   /* allows images like 3rd eye serj accent piece and spooky shavo to fill whole width of page for smaller displays */
   img {
     max-width: 100vw;
@@ -730,6 +767,7 @@ it just brings the paragraphs along with the first item to wrap so it looks clea
     flex-direction: column-reverse;
   }
 }
+
 @media (max-width: 375px) {
   /* give header less padding to allow triangles in the logo to breathe) */
   .header {
